@@ -23,12 +23,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val myModel = rememberSaveable() {
-                MyModel()
+            Surface(modifier = Modifier.fillMaxSize()) {
+                TheLayout()
             }
-//            val myModel = MyModel()
-
-            TheLayout(myModel)
         }
     }
 }
